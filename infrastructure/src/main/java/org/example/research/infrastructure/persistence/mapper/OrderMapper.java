@@ -7,6 +7,6 @@ import org.springframework.core.annotation.Order;
 @Mapper
 public interface OrderMapper {
 
-    @Insert("insert into ")
+    @Insert("insert into order() values ()")
     Void insert(Order order);
 }
