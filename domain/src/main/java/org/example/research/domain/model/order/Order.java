@@ -1,7 +1,8 @@
 package org.example.research.domain.model.order;
 
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 /**
  * @author chenlr42044
@@ -10,5 +11,15 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
  */
 @Entity
 public class Order {
-    
+
+    @Id
+    private Long id;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }

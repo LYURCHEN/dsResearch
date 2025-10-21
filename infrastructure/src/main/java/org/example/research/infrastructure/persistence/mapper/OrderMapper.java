@@ -9,4 +9,9 @@ public interface OrderMapper {
 
     @Insert("insert into order() values ()")
     Void insert(Order order);
+
+
+    void update(Order order);
+
+
 }
